@@ -819,14 +819,17 @@ section,
 .skills .progress-bar-wrap {
   background: color-mix(in srgb, var(--default-color), transparent 90%);
   height: 10px;
+  width: 100%;
 }
 
 .skills .progress-bar {
-  width: 1px;
+  /* Remove the fixed width so dynamic width works */
+  /* width: 1px; */  /* ❌ remove or comment this line */
   height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color)
+  transition: width 0.9s ease-in-out;
+  background-color: var(--accent-color);
 }
+
 
 /*--------------------------------------------------------------
 # Stats Section
