@@ -824,8 +824,8 @@ section,
 .skills .progress-bar {
  /* width: 1px;*/
   height: 10px;
-  transition: width 0.9s ease-in-out;
-  background-color: var(--accent-color);
+  transition: 0.9s;
+  background-color: var(--accent-color)
 }
 
 /*--------------------------------------------------------------
